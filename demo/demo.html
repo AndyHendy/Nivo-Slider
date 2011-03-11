@@ -14,20 +14,22 @@
         <div id="slider-wrapper">
         
             <div id="slider" class="nivoSlider">
-                <img src="images/toystory.jpg" alt="" />
-                <a href="http://dev7studios.com"><img src="images/up.jpg" alt="" title="This is an example of a caption" /></a>
-                <img src="images/walle.jpg" alt="" />
-                <img src="images/nemo.jpg" alt="" title="#htmlcaption" />
+                <img src="images/toystory.jpg" alt="rgb(0,0,255)" title="Inline caption with RGB color value" />
+                <a href="http://dev7studios.com"><img src="images/up.jpg" alt=""/></a>
+                <img src="images/walle.jpg" alt="orange" title="#htmlcaption" />
+                <img src="images/nemo.jpg" alt="#CC0000" title="#htmlcaption2" />
             </div>
             <div id="htmlcaption" class="nivo-html-caption">
-                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+                <strong>This</strong> is an example of a <em>HTML</em> caption with "orange" as the defined color.
             </div>
-        
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with a HEX color value and <a href="#">a link</a>.
+            </div>
         </div>
 
     </div>
     <script type="text/javascript" src="scripts/jquery-1.4.3.min.js"></script>
-    <script type="text/javascript" src="../jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="../jquery.nivo.slider.js"></script>
     <script type="text/javascript">
     $(window).load(function() {
         $('#slider').nivoSlider();
